@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double WatchAuthenticatorVersionNumber;
 FOUNDATION_EXPORT const unsigned char WatchAuthenticatorVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WatchAuthenticator/PublicHeader.h>
-
-

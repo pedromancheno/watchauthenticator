@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0FE1972E1C70C7FF00C41FC7 /* WatchAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE1972D1C70C7FF00C41FC7 /* WatchAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FE197591C70D3AE00C41FC7 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */; };
+		0FE1975D1C70D3C700C41FC7 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1975B1C70D3C700C41FC7 /* AuthenticationController.swift */; };
+		0FE1975E1C70D3C700C41FC7 /* ConnectivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1975C1C70D3C700C41FC7 /* ConnectivityController.swift */; };
+		0FE197611C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE197601C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FE1972A1C70C7FF00C41FC7 /* WatchAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WatchAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE1972D1C70C7FF00C41FC7 /* WatchAuthenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchAuthenticator.h; sourceTree = "<group>"; };
 		0FE1972F1C70C7FF00C41FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		0FE1975B1C70D3C700C41FC7 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		0FE1975C1C70D3C700C41FC7 /* ConnectivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityController.swift; sourceTree = "<group>"; };
+		0FE197601C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchAuthenticatorCommonFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE197591C70D3AE00C41FC7 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,6 +39,8 @@
 		0FE197201C70C7FF00C41FC7 = {
 			isa = PBXGroup;
 			children = (
+				0FE1975F1C70D3E200C41FC7 /* Common */,
+				0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */,
 				0FE1972C1C70C7FF00C41FC7 /* WatchAuthenticator */,
 				0FE1972B1C70C7FF00C41FC7 /* Products */,
 			);
@@ -46,10 +57,28 @@
 		0FE1972C1C70C7FF00C41FC7 /* WatchAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				0FE1975A1C70D3BC00C41FC7 /* Source */,
 				0FE1972D1C70C7FF00C41FC7 /* WatchAuthenticator.h */,
 				0FE1972F1C70C7FF00C41FC7 /* Info.plist */,
 			);
 			path = WatchAuthenticator;
+			sourceTree = "<group>";
+		};
+		0FE1975A1C70D3BC00C41FC7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0FE1975B1C70D3C700C41FC7 /* AuthenticationController.swift */,
+				0FE1975C1C70D3C700C41FC7 /* ConnectivityController.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0FE1975F1C70D3E200C41FC7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0FE197601C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE1975E1C70D3C700C41FC7 /* ConnectivityController.swift in Sources */,
+				0FE1975D1C70D3C700C41FC7 /* AuthenticationController.swift in Sources */,
+				0FE197611C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -237,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedromancheno.WatchAuthenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -244,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +311,7 @@
 				0FE197341C70C7FF00C41FC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
