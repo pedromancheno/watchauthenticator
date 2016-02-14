@@ -6,11 +6,7 @@
 //  Copyright © 2016 pedromancheno. All rights reserved.
 //
 
-struct RequestAuthInfoMessage {
-    static let key = "message"
-    static let value = "requestingAuthInfo"
-}
-
-struct AuthInfoToken {
-    static let key = "token"
-}
+let ConnectivityMessageKey = "ConnectivityMessage"
+let ConnectivityMessageAuthInfoValue = "ConnectivityMessageAuthInfo"
+let AuthInfoTokenKey = "AuthInfoToken"
+let AuthInfoErrorKey = "AuthInfoError"

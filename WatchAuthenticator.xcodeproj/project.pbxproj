@@ -10,9 +10,25 @@
 		0FE1972E1C70C7FF00C41FC7 /* WatchAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE1972D1C70C7FF00C41FC7 /* WatchAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FE197591C70D3AE00C41FC7 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */; };
 		0FE1975D1C70D3C700C41FC7 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1975B1C70D3C700C41FC7 /* AuthenticationController.swift */; };
-		0FE1975E1C70D3C700C41FC7 /* ConnectivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1975C1C70D3C700C41FC7 /* ConnectivityController.swift */; };
+		0FE1975E1C70D3C700C41FC7 /* WatchConnectivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1975C1C70D3C700C41FC7 /* WatchConnectivityController.swift */; };
 		0FE197611C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE197601C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift */; };
+		0FE1976B1C70E32800C41FC7 /* PhoneAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE1976A1C70E32800C41FC7 /* PhoneAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FE197721C70E32800C41FC7 /* PhoneAuthenticator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE197681C70E32800C41FC7 /* PhoneAuthenticator.framework */; };
+		0FE197771C70E32800C41FC7 /* PhoneAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE197761C70E32800C41FC7 /* PhoneAuthenticatorTests.swift */; };
+		0FE1977F1C70E33800C41FC7 /* WatchAuthenticatorCommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE197601C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift */; };
+		0FE197821C70E38F00C41FC7 /* PhoneConnectivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE197811C70E38F00C41FC7 /* PhoneConnectivityController.swift */; };
+		0FE197841C70E3A800C41FC7 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE197831C70E3A800C41FC7 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FE197731C70E32800C41FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FE197211C70C7FF00C41FC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FE197671C70E32800C41FC7;
+			remoteInfo = PhoneAuthenticator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0FE1972A1C70C7FF00C41FC7 /* WatchAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WatchAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,8 +36,16 @@
 		0FE1972F1C70C7FF00C41FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		0FE1975B1C70D3C700C41FC7 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
-		0FE1975C1C70D3C700C41FC7 /* ConnectivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityController.swift; sourceTree = "<group>"; };
+		0FE1975C1C70D3C700C41FC7 /* WatchConnectivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityController.swift; sourceTree = "<group>"; };
 		0FE197601C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchAuthenticatorCommonFile.swift; sourceTree = "<group>"; };
+		0FE197681C70E32800C41FC7 /* PhoneAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE1976A1C70E32800C41FC7 /* PhoneAuthenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneAuthenticator.h; sourceTree = "<group>"; };
+		0FE1976C1C70E32800C41FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE197711C70E32800C41FC7 /* PhoneAuthenticatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneAuthenticatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FE197761C70E32800C41FC7 /* PhoneAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthenticatorTests.swift; sourceTree = "<group>"; };
+		0FE197781C70E32800C41FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE197811C70E38F00C41FC7 /* PhoneConnectivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneConnectivityController.swift; sourceTree = "<group>"; };
+		0FE197831C70E3A800C41FC7 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FE197641C70E32800C41FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE197841C70E3A800C41FC7 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE1976E1C70E32800C41FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE197721C70E32800C41FC7 /* PhoneAuthenticator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				0FE1975F1C70D3E200C41FC7 /* Common */,
-				0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */,
 				0FE1972C1C70C7FF00C41FC7 /* WatchAuthenticator */,
+				0FE197691C70E32800C41FC7 /* PhoneAuthenticator */,
+				0FE197751C70E32800C41FC7 /* PhoneAuthenticatorTests */,
 				0FE1972B1C70C7FF00C41FC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				0FE1972A1C70C7FF00C41FC7 /* WatchAuthenticator.framework */,
+				0FE197681C70E32800C41FC7 /* PhoneAuthenticator.framework */,
+				0FE197711C70E32800C41FC7 /* PhoneAuthenticatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +100,7 @@
 		0FE1972C1C70C7FF00C41FC7 /* WatchAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				0FE197621C70E18000C41FC7 /* Frameworks */,
 				0FE1975A1C70D3BC00C41FC7 /* Source */,
 				0FE1972D1C70C7FF00C41FC7 /* WatchAuthenticator.h */,
 				0FE1972F1C70C7FF00C41FC7 /* Info.plist */,
@@ -68,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				0FE1975B1C70D3C700C41FC7 /* AuthenticationController.swift */,
-				0FE1975C1C70D3C700C41FC7 /* ConnectivityController.swift */,
+				0FE1975C1C70D3C700C41FC7 /* WatchConnectivityController.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -81,6 +125,51 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		0FE197621C70E18000C41FC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FE197581C70D3AE00C41FC7 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0FE197691C70E32800C41FC7 /* PhoneAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				0FE197851C70E3B400C41FC7 /* Frameworks */,
+				0FE197801C70E34100C41FC7 /* Source */,
+				0FE1976A1C70E32800C41FC7 /* PhoneAuthenticator.h */,
+				0FE1976C1C70E32800C41FC7 /* Info.plist */,
+			);
+			path = PhoneAuthenticator;
+			sourceTree = "<group>";
+		};
+		0FE197751C70E32800C41FC7 /* PhoneAuthenticatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FE197761C70E32800C41FC7 /* PhoneAuthenticatorTests.swift */,
+				0FE197781C70E32800C41FC7 /* Info.plist */,
+			);
+			path = PhoneAuthenticatorTests;
+			sourceTree = "<group>";
+		};
+		0FE197801C70E34100C41FC7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0FE197811C70E38F00C41FC7 /* PhoneConnectivityController.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0FE197851C70E3B400C41FC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FE197831C70E3A800C41FC7 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -89,6 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE1972E1C70C7FF00C41FC7 /* WatchAuthenticator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE197651C70E32800C41FC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE1976B1C70E32800C41FC7 /* PhoneAuthenticator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,16 +210,59 @@
 			productReference = 0FE1972A1C70C7FF00C41FC7 /* WatchAuthenticator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0FE197671C70E32800C41FC7 /* PhoneAuthenticator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE197791C70E32800C41FC7 /* Build configuration list for PBXNativeTarget "PhoneAuthenticator" */;
+			buildPhases = (
+				0FE197631C70E32800C41FC7 /* Sources */,
+				0FE197641C70E32800C41FC7 /* Frameworks */,
+				0FE197651C70E32800C41FC7 /* Headers */,
+				0FE197661C70E32800C41FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneAuthenticator;
+			productName = PhoneAuthenticator;
+			productReference = 0FE197681C70E32800C41FC7 /* PhoneAuthenticator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0FE197701C70E32800C41FC7 /* PhoneAuthenticatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE1977C1C70E32800C41FC7 /* Build configuration list for PBXNativeTarget "PhoneAuthenticatorTests" */;
+			buildPhases = (
+				0FE1976D1C70E32800C41FC7 /* Sources */,
+				0FE1976E1C70E32800C41FC7 /* Frameworks */,
+				0FE1976F1C70E32800C41FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE197741C70E32800C41FC7 /* PBXTargetDependency */,
+			);
+			name = PhoneAuthenticatorTests;
+			productName = PhoneAuthenticatorTests;
+			productReference = 0FE197711C70E32800C41FC7 /* PhoneAuthenticatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0FE197211C70C7FF00C41FC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = pedromancheno;
 				TargetAttributes = {
 					0FE197291C70C7FF00C41FC7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0FE197671C70E32800C41FC7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0FE197701C70E32800C41FC7 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -140,12 +280,28 @@
 			projectRoot = "";
 			targets = (
 				0FE197291C70C7FF00C41FC7 /* WatchAuthenticator */,
+				0FE197671C70E32800C41FC7 /* PhoneAuthenticator */,
+				0FE197701C70E32800C41FC7 /* PhoneAuthenticatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0FE197281C70C7FF00C41FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE197661C70E32800C41FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE1976F1C70E32800C41FC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,13 +315,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FE1975E1C70D3C700C41FC7 /* ConnectivityController.swift in Sources */,
+				0FE1975E1C70D3C700C41FC7 /* WatchConnectivityController.swift in Sources */,
 				0FE1975D1C70D3C700C41FC7 /* AuthenticationController.swift in Sources */,
 				0FE197611C70D41900C41FC7 /* WatchAuthenticatorCommonFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FE197631C70E32800C41FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE1977F1C70E33800C41FC7 /* WatchAuthenticatorCommonFile.swift in Sources */,
+				0FE197821C70E38F00C41FC7 /* PhoneConnectivityController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FE1976D1C70E32800C41FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE197771C70E32800C41FC7 /* PhoneAuthenticatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FE197741C70E32800C41FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FE197671C70E32800C41FC7 /* PhoneAuthenticator */;
+			targetProxy = 0FE197731C70E32800C41FC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0FE197301C70C7FF00C41FC7 /* Debug */ = {
@@ -292,6 +473,72 @@
 			};
 			name = Release;
 		};
+		0FE1977A1C70E32800C41FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhoneAuthenticator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedromancheno.PhoneAuthenticator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FE1977B1C70E32800C41FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhoneAuthenticator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedromancheno.PhoneAuthenticator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FE1977D1C70E32800C41FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PhoneAuthenticatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedromancheno.PhoneAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FE1977E1C70E32800C41FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PhoneAuthenticatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedromancheno.PhoneAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -312,6 +559,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0FE197791C70E32800C41FC7 /* Build configuration list for PBXNativeTarget "PhoneAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE1977A1C70E32800C41FC7 /* Debug */,
+				0FE1977B1C70E32800C41FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0FE1977C1C70E32800C41FC7 /* Build configuration list for PBXNativeTarget "PhoneAuthenticatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE1977D1C70E32800C41FC7 /* Debug */,
+				0FE1977E1C70E32800C41FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

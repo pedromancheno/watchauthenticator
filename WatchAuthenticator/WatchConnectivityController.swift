@@ -8,24 +8,27 @@
 
 import WatchConnectivity
 
-class ConnectivityController: NSObject, WCSessionDelegate {
+class WatchConnectivityController: NSObject, WCSessionDelegate {
     
-    private lazy var session: WCSession? = {
+    private let session: WCSession?
+    
+    override init() {
         if WCSession.isSupported() {
-            let session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-            return session
+            session = WCSession.defaultSession()
+        } else {
+            session = nil
         }
-        return nil
-    }()
+        super.init()
+        session?.delegate = self
+        session?.activateSession()
+    }
     
     func requestAuthInfoFromPhone(completion:(success:Bool,
         response:[String: AnyObject]?,
         error:NSError?) -> Void) {
             
             session?.sendMessage(
-                [RequestAuthInfoMessage.key : RequestAuthInfoMessage.value],
+                [ConnectivityMessageKey : ConnectivityMessageAuthInfoValue],
                 replyHandler: { (responseDict) -> Void in
                     completion(success: true, response: responseDict, error: nil)
                 }, errorHandler: { (error) -> Void in
